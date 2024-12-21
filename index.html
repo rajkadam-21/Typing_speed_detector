@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1>Typing Speed Detector</h1>
+        </div>
+        <div class="para">
+            <p id="text-to-type">Text will appear here......</p>
+        </div>
+        <textarea id="typing-area" placeholder="Type here"></textarea>
+        <div class="press">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="restart">Restart</button>
+        </div>
+        <div class="info">
+            <p>Accuracy <br><span id="accuracy">0%</span></p>
+            <p>Time left <br> <span id="time">60s</span></p>
+            <p>Words per minute <br> <span id="wpm">0</span></p>
+        </div>
+
+    </div>
+    
+
+     <div id="result" class="modal">
+        <div class="modal-content" >
+            <h2>Well done!</h2>
+            <p>Accuracy: <span id="modal-accuracy">0%</span> </p>
+            <p>Words per minute: <span id="modal-wpm">0</span></p>
+            <button id="close">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
