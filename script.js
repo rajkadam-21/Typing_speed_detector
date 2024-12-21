@@ -5,7 +5,7 @@ const typingArea = document.getElementById('typing-area')
 const textToType = document.getElementById('text-to-type')
 const wpmDisplay = document.getElementById('wpm')
 const accuracyDisplay = document.getElementById('accuracy')
-
+ 
 
 let timer = null;
 let startTime = null;
